@@ -6,13 +6,14 @@ import Home from './Componets/Home'
 import Login from './Componets/Login'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import AboutPages from './Pages/AboutPages'
 
 function App () {
   return (
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about' element={<AboutPages />} />
         <Route path='/login' element={<Login />} />
         <Route path='/testomonials' element={<Testomonials />} />
       </Routes>
